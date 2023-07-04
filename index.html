@@ -1,0 +1,504 @@
+<html lang="zh-CN" data-theme="light">
+
+<head>
+    <!--夏柔公益开发-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+        在线网站日志分析工具 - 免费的网站日志分析工具
+    </title>
+    <meta name="keywords" content="在线网站日志分析工具 - 免费的网站日志分析工具">
+    <meta name="author" content="在线网站日志分析工具 - 免费的网站日志分析工具">
+    <meta name="copyright" content="在线网站日志分析工具 - 免费的网站日志分析工具">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#f7f9fe">
+    <meta property="og:site_name" content="在线网站日志分析工具 - 免费的网站日志分析工具">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:author" content="在线网站日志分析工具 - 免费的网站日志分析工具">
+    <meta property="article:tag" content="在线网站日志分析工具 - 免费的网站日志分析工具,cdnfly-log.apii.cn">
+    <link rel="stylesheet" href="./assets/xiarouya.css">
+    <meta name="apple-mobile-web-app-title" content="ChatGPT账号在线批量检测免费版">
+    <link rel="bookmark" href="./assets/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="./assets/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+    <!-- 样式 -->
+    <meta property="og:image" content="./assets/favicon.png">
+    <link rel="stylesheet" href="./assets/css/style-footer.css" media="all" onload="this.media=&quot;all&quot;">
+    <link rel="stylesheet" href="./assets/css/425c17a253f62.css" media="all" onload="this.media=&quot;all&quot;">
+    <link rel="stylesheet" href="./assets/css/cc3a1705a87ff.css" media="all" onload="this.media=&quot;all&quot;">
+    <style type="text/css">
+
+    </style>
+    <style>
+        #loading {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .lds-ring {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+        
+        .lds-ring div {
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            width: 64px;
+            height: 64px;
+            margin: 8px;
+            border: 8px solid #3b5de7;
+            border-radius: 50%;
+            animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            border-color: #3b5de7 transparent transparent transparent;
+        }
+        
+        .lds-ring div:nth-child(1) {
+            animation-delay: -0.45s;
+        }
+        
+        .lds-ring div:nth-child(2) {
+            animation-delay: -0.3s;
+        }
+        
+        .lds-ring div:nth-child(3) {
+            animation-delay: -0.15s;
+        }
+        
+        @keyframes lds-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <!-- jquery.vectormap css -->
+    <link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="pace-done " style="width: 100%;" _c_t_common="1">
+    <div id="web_bg" style="zoom: 1;">
+    </div>
+    <div class="page" id="body-wrap" style="zoom: 1;">
+        <main class="layout hide-aside" id="content-inner">
+            <div id="page">
+                <div id="hexo-circle-of-friends-root" data-v-app="">
+                    <div>
+                        <div>
+                            <div id="cf-container">
+                                <div id="cf-state-box" data-v-0ed50aaf="">
+                                    <div id="cf-state" class="cf-new-add" data-v-0ed50aaf="">
+                                        <button class="el-button is-circle" aria-disabled="false" type="button" id="panel-btn" data-v-0ed50aaf="">
+                                                <!--v-if-->
+                                                <span class="">
+                                                    <i class="el-icon" data-v-0ed50aaf="">
+                                                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-v-0ed50aaf="">
+                                                            <path fill="currentColor" d="M600.704 64a32 32 0 0 1 30.464 22.208l35.2 109.376c14.784 7.232 28.928 15.36 42.432 24.512l112.384-24.192a32 32 0 0 1 34.432 15.36L944.32 364.8a32 32 0 0 1-4.032 37.504l-77.12 85.12a357.12 357.12 0 0 1 0 49.024l77.12 85.248a32 32 0 0 1 4.032 37.504l-88.704 153.6a32 32 0 0 1-34.432 15.296L708.8 803.904c-13.44 9.088-27.648 17.28-42.368 24.512l-35.264 109.376A32 32 0 0 1 600.704 960H423.296a32 32 0 0 1-30.464-22.208L357.696 828.48a351.616 351.616 0 0 1-42.56-24.64l-112.32 24.256a32 32 0 0 1-34.432-15.36L79.68 659.2a32 32 0 0 1 4.032-37.504l77.12-85.248a357.12 357.12 0 0 1 0-48.896l-77.12-85.248A32 32 0 0 1 79.68 364.8l88.704-153.6a32 32 0 0 1 34.432-15.296l112.32 24.256c13.568-9.152 27.776-17.408 42.56-24.64l35.2-109.312A32 32 0 0 1 423.232 64H600.64zm-23.424 64H446.72l-36.352 113.088-24.512 11.968a294.113 294.113 0 0 0-34.816 20.096l-22.656 15.36-116.224-25.088-65.28 113.152 79.68 88.192-1.92 27.136a293.12 293.12 0 0 0 0 40.192l1.92 27.136-79.808 88.192 65.344 113.152 116.224-25.024 22.656 15.296a294.113 294.113 0 0 0 34.816 20.096l24.512 11.968L446.72 896h130.688l36.48-113.152 24.448-11.904a288.282 288.282 0 0 0 34.752-20.096l22.592-15.296 116.288 25.024 65.28-113.152-79.744-88.192 1.92-27.136a293.12 293.12 0 0 0 0-40.256l-1.92-27.136 79.808-88.128-65.344-113.152-116.288 24.96-22.592-15.232a287.616 287.616 0 0 0-34.752-20.096l-24.448-11.904L577.344 128zM512 320a192 192 0 1 1 0 384 192 192 0 0 1 0-384zm0 64a128 128 0 1 0 0 256 128 128 0 0 0 0-256z">
+                                                            </path>
+                                                        </svg>
+                                                    </i>
+                                                </span>
+                                            </button>
+                                    </div>
+                                </div>
+                                <div class="category-lists">
+                                    <div class="category-title is-center">
+                                        分类 -
+                                        <span class="category-amount">
+                                                0
+                                            </span>
+                                    </div>
+                                    <div class="tag-cloud-list is-center">
+                                        <a href="https://log.aa1.cn" id="功能范围" style="font-size: 1em; color: rgb(21, 49, 53)" data-pjax-state="">
+                                            <span class="tags-punctuation">
+                                                    #
+                                                </span> 在线分析：
+                                            <span class="tagsPageCount">
+                                                    网站日志
+                                                </span>
+                                        </a>
+                                        <a href="https://www.aa1.cn" id="夏柔公益" style="font-size: 1em; color: rgb(21, 49, 53)" data-pjax-state="">
+                                            <span class="tags-punctuation">
+                                                    #
+                                                </span> 技术支持：
+                                            <span class="tagsPageCount">
+                                                    夏柔公益
+                                                </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--<script src="jc.js"></script>-->
+                                <!--state overview start-->
+
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4 class="card-title mb-4">分析报告 · 累计分析次数</h4>
+                                                <div class="row">
+                                                    <div class="col-sm-7">
+                                                        <div>
+                                                            <p class="mb-2">截止目前，已分析数据报告</p>
+                                                            <div id="countnum"></div>
+
+                                                            <p class="mt-2 mb-0"><span class="badge badge-soft-success me-2"> 0.6%
+                            <i class="mdi mdi-arrow-up"></i> </span> 分析优化提升
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="mt-4 mt-sm-0" style="position: relative;">
+                                                            <div id="sales-report-chart" class="apex-charts" style="min-height: 100px;">
+                                                                <div id="apexchartsxgqki2egl" class="apexcharts-canvas apexchartsxgqki2egl apexcharts-theme-light" style="width: 140.328125px; height: 100px;"><svg id="SvgjsSvg1157" width="140.328125" height="100" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg"
+                                                                        xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background-color: transparent;"><g id="SvgjsG1159" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 0)"><defs id="SvgjsDefs1158"><clipPath id="gridRectMaskxgqki2egl"><rect id="SvgjsRect1164" width="147.328125" height="103" x="-3.5" y="-1.5" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskxgqki2egl"><rect id="SvgjsRect1165" width="144.328125" height="104" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><line id="SvgjsLine1163" x1="0" y1="0" x2="0" y2="100" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="100" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG1171" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1172" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"></g></g><g id="SvgjsG1184" class="apexcharts-grid"><g id="SvgjsG1185" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine1187" x1="0" y1="0" x2="140.328125" y2="0" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1188" x1="0" y1="20" x2="140.328125" y2="20" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1189" x1="0" y1="40" x2="140.328125" y2="40" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1190" x1="0" y1="60" x2="140.328125" y2="60" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1191" x1="0" y1="80" x2="140.328125" y2="80" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1192" x1="0" y1="100" x2="140.328125" y2="100" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG1186" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine1194" x1="0" y1="100" x2="140.328125" y2="100" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1193" x1="0" y1="1" x2="0" y2="100" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1166" class="apexcharts-line-series apexcharts-plot-series"><g id="SvgjsG1167" class="apexcharts-series" seriesName="SeriesxA" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1170" d="M0 76C5.457204861111111 76 10.134809027777777 34 15.59201388888889 34C21.04921875 34 25.726822916666666 58 31.18402777777778 58C36.64123263888889 58 41.318836805555556 12 46.776041666666664 12C52.23324652777778 12 56.91085069444445 38 62.36805555555556 38C67.82526041666667 38 72.50286458333333 76 77.96006944444444 76C83.41727430555555 76 88.09487847222222 55 93.55208333333333 55C99.00928819444444 55 103.68689236111112 88 109.14409722222223 88C114.60130208333334 88 119.27890625 64 124.73611111111111 64C130.19331597222222 64 134.8709201388889 90 140.328125 90C140.328125 90 140.328125 90 140.328125 90 " fill="none" fill-opacity="1" stroke="rgba(59,93,231,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="3" stroke-dasharray="0" class="apexcharts-line" index="0" clip-path="url(#gridRectMaskxgqki2egl)" pathTo="M 0 76C 5.457204861111111 76 10.134809027777777 34 15.59201388888889 34C 21.04921875 34 25.726822916666666 58 31.18402777777778 58C 36.64123263888889 58 41.318836805555556 12 46.776041666666664 12C 52.23324652777778 12 56.91085069444445 38 62.36805555555556 38C 67.82526041666667 38 72.50286458333333 76 77.96006944444444 76C 83.41727430555555 76 88.09487847222222 55 93.55208333333333 55C 99.00928819444444 55 103.68689236111112 88 109.14409722222223 88C 114.60130208333334 88 119.27890625 64 124.73611111111111 64C 130.19331597222222 64 134.8709201388889 90 140.328125 90" pathFrom="M -1 100L -1 100L 15.59201388888889 100L 31.18402777777778 100L 46.776041666666664 100L 62.36805555555556 100L 77.96006944444444 100L 93.55208333333333 100L 109.14409722222223 100L 124.73611111111111 100L 140.328125 100"></path><g id="SvgjsG1168" class="apexcharts-series-markers-wrap" data:realIndex="0"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1200" r="0" cx="0" cy="0" class="apexcharts-marker wbkyui3z4 no-pointer-events" stroke="#ffffff" fill="#3b5de7" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG1169" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine1195" x1="0" y1="0" x2="140.328125" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1196" x1="0" y1="0" x2="140.328125" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1197" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1198" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1199" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1162" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG1183" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG1160" class="apexcharts-annotations"></g></svg>
+                                                                    <div class="apexcharts-legend" style="max-height: 50px;"></div>
+                                                                    <div class="apexcharts-tooltip apexcharts-theme-light">
+                                                                        <div class="apexcharts-tooltip-title" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"></div>
+                                                                        <div class="apexcharts-tooltip-series-group" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(59, 93, 231);"></span>
+                                                                            <div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;">
+                                                                                <div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value"></span></div>
+                                                                                <div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light">
+                                                                        <div class="apexcharts-yaxistooltip-text"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="resize-triggers">
+                                                                <div class="expand-trigger">
+                                                                    <div style="width: 141px; height: 101px;"></div>
+                                                                </div>
+                                                                <div class="contract-trigger"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-3">
+
+
+
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row align-items-center">
+                                                    <div class="col-8">
+                                                        <p class="mb-2">分析效率</p>
+                                                        <h4 class="mb-0">秒级计算处理</h4>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="text-end">
+                                                            <div>
+                                                                精准 <i class="mdi mdi-arrow-up text-success ms-1"></i>
+                                                            </div>
+                                                            <div class="progress progress-sm mt-3">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-xl-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <div>
+                                                            <p class="text-muted fw-medium mt-1 mb-2">报告生成</p>
+                                                            <h4>直观简洁</h4>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <div style="position: relative;">
+                                                            <div id="radial-chart-1" style="min-height: 86.7px;">
+                                                                <div id="apexcharts51qnujtq" class="apexcharts-canvas apexcharts51qnujtq apexcharts-theme-light" style="width: 51.15625px; height: 86.7px;"><svg id="SvgjsSvg1001" width="51.15625" height="86.7" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg"
+                                                                        xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background-color: transparent;"><g id="SvgjsG1003" class="apexcharts-inner apexcharts-graphical" transform="translate(-21.421875, -12)"><defs id="SvgjsDefs1002"><clipPath id="gridRectMask51qnujtq"><rect id="SvgjsRect1005" width="102" height="120" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMask51qnujtq"><rect id="SvgjsRect1006" width="100" height="122" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><g id="SvgjsG1007" class="apexcharts-radialbar"><g id="SvgjsG1008"><g id="SvgjsG1009" class="apexcharts-tracks"><g id="SvgjsG1010" class="apexcharts-radialbar-track apexcharts-track" rel="1"><path id="apexcharts-radialbarTrack-0" d="M 48 16.919512195121953 A 31.080487804878047 31.080487804878047 0 1 1 47.994575431574326 16.91951266850485" fill="none" fill-opacity="1" stroke="rgba(242,242,242,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="3.07087804878049" stroke-dasharray="0" class="apexcharts-radialbar-area" data:pathOrig="M 48 16.919512195121953 A 31.080487804878047 31.080487804878047 0 1 1 47.994575431574326 16.91951266850485"></path></g></g><g id="SvgjsG1012"><g id="SvgjsG1016" class="apexcharts-series apexcharts-radial-series" seriesName="seriesx1" rel="1" data:realIndex="0"><path id="SvgjsPath1017" d="M 48 16.919512195121953 A 31.080487804878047 31.080487804878047 0 1 1 18.44069954353868 57.60439892517063" fill="none" fill-opacity="0.85" stroke="rgba(59,93,231,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="3.1658536585365873" stroke-dasharray="0" class="apexcharts-radialbar-area apexcharts-radialbar-slice-0" data:angle="252" data:value="70" index="0" j="0" data:pathOrig="M 48 16.919512195121953 A 31.080487804878047 31.080487804878047 0 1 1 18.44069954353868 57.60439892517063"></path></g><circle id="SvgjsCircle1013" r="24.5450487804878" cx="48" cy="48" class="apexcharts-radialbar-hollow" fill="rgba(59, 93, 231, .25)"></circle><g id="SvgjsG1014" class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)" style="opacity: 1;"><text id="SvgjsText1015" font-family="Helvetica, Arial, sans-serif" x="48" y="53" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-text apexcharts-datalabel-value" style="font-family: Helvetica, Arial, sans-serif;">70%</text></g></g></g></g><line id="SvgjsLine1018" x1="0" y1="0" x2="96" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1019" x1="0" y1="0" x2="96" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line></g><g id="SvgjsG1004" class="apexcharts-annotations"></g></svg>
+                                                                    <div class="apexcharts-legend"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="resize-triggers">
+                                                                <div class="expand-trigger">
+                                                                    <div style="width: 52px; height: 88px;"></div>
+                                                                </div>
+                                                                <div class="contract-trigger"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0"><span class="badge badge-soft-success me-2"> 可视化 <i class="mdi mdi-arrow-up"></i> </span> 查阅你的网站日志</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <section id="main-content">
+                                    <section class="wrapper">
+                                        <div class="create-site-post author-content-item single">
+                                            <div class="col-lg-12">
+                                                <!--work progress start-->
+                                                <section class="panel">
+                                                    <div class="panel-body progress-panel">
+                                                        <div class="task-progress">
+                                                            <h1 style="text-align:center;">
+                                                                在线网站分析日志工具
+                                                            </h1>
+
+                                                            <p class="note warning simple">
+                                                                支持平台
+                                                                <span style="color:red;">
+                                                                        CDNFLY 宝塔面板（敬请期待） 
+                                                                    </span>
+                                                                <button class="btn btn-primary w-md waves-effect waves-light" id="renderPdf">下载报告</button>
+                                                            </p>
+
+                                                            <!-- 类型选择 -->
+                                                            <!-- <label for="typeSelect"></label> -->
+                                                            <select id="typeSelect" class="btn btn-secondary btn-sm dropdown-toggle" style="margin-top:-10px;">
+        <option value="text">CdnFly-纯文本分析</option>
+        <option value="file">CdnFly-文件分析</option>
+    </select>
+                                                            <br>
+                                                            <!-- 文本输入区域 -->
+                                                            <div id="textArea">
+                                                                <textarea id="logText" rows="10" cols="50" rows="4" class="el-textarea__inner" style="height: 163px;" placeholder="每行一条，示例：03/Jul/2023:17:47:15 +0800	v.api.aa1.cn	443	HTTP/2.0	GET	/api/yiyan/index.php	200	112.21.1.233	text/html; charset=utf-8	-	WeChat/8.0.37.32 CFNetwork/1408.0.4 Darwin/22.5.0	0.105	5580	-"></textarea>
+                                                                <br> <button id="analyzeBtn" class="btn btn-primary" style="float:right;">分析</button>
+                                                            </div>
+
+                                                            <!-- 文件上传区域 -->
+                                                            <div id="fileArea" style="display: none;">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="card">
+                                                                            <div class="card-body">
+
+                                                                                <h4 class="card-title" style="text-align: center;">文件分析</h4>
+                                                                                <p class="card-title-desc" style="text-align: center;">请上传你的日志文件，系统将以最直观的方式展现你的日志数据报告.
+                                                                                </p>
+
+                                                                                <div>
+
+                                                                                    <div class="dz-message needsclick">
+                                                                                        <div class="mb-3" style="text-align: center;">
+                                                                                            <i class="display-4 text-muted mdi mdi-upload-network-outline"></i>
+                                                                                        </div>
+                                                                                        <input type="file" name="log_file" id="log_file" style="top:30%;position: absolute;left: 50%;transform: translateX(-50%);">
+                                                                                        <h4 style="text-align: center;">请选择你的 .log / .txt 文件并上传.</h4>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="text-center mt-4">
+                                                                                    <button class="btn btn-primary waves-effect waves-light" id="uploadBtn">Send
+                                                                                        Files</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- end col -->
+                                                                </div>
+                                                            </div>
+
+
+                                                            <br>
+                                                            <!--<div class="note warning simple">-->
+
+                                                            <!--</div>-->
+
+                                                            <br>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <!--work progress end-->
+                                            </div>
+                                        </div>
+                                    </section>
+                                </section>
+                                <br>
+                                <div id="result"></div>
+                            </div>
+                            <!--main content end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    </div>
+    <div id="loading">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- 输出结果 -->
+    <div id="result"></div>
+
+    <script>
+        var analysisResult = null; // 全局变量用于存储分析结果
+
+        // 切换类型时显示相应的区域
+        document.getElementById("typeSelect").addEventListener("change", function() {
+            var type = this.value;
+            var textArea = document.getElementById("textArea");
+            var fileArea = document.getElementById("fileArea");
+
+            if (type === "text") {
+                textArea.style.display = "block";
+                fileArea.style.display = "none";
+            } else if (type === "file") {
+                textArea.style.display = "none";
+                fileArea.style.display = "block";
+            }
+
+            // 如果有分析结果，则显示之前的分析结果
+            if (analysisResult !== null) {
+                var resultDiv = document.getElementById("result");
+                resultDiv.innerHTML = analysisResult;
+            }
+        });
+
+        // 手动复制粘贴文本分析
+        document.getElementById("analyzeBtn").addEventListener("click", function(event) {
+            event.preventDefault(); // 阻止默认的提交行为
+            var logText = document.getElementById("logText").value;
+
+            // 显示加载动画
+            showLoading();
+
+            // 发送文本到后端的PHP接口
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "https://v.api.aa1.cn/api/cdnfly-logtj/");
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // 更新分析结果并显示
+                    analysisResult = xhr.responseText;
+                    var resultDiv = document.getElementById("result");
+                    resultDiv.innerHTML = analysisResult;
+
+                    // 隐藏加载动画
+                    hideLoading();
+                }
+            };
+            xhr.send("logText=" + encodeURIComponent(logText));
+        });
+
+        // 文件上传分析
+        document.getElementById("uploadBtn").addEventListener("click", function(event) {
+            event.preventDefault(); // 阻止默认的提交行为
+            var fileInput = document.getElementById("log_file");
+            var file = fileInput.files[0];
+
+            if (file) {
+                // 显示加载动画
+                showLoading();
+
+                var formData = new FormData();
+                formData.append("log_file", file);
+
+                // 发送文件到后端的PHP接口
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "https://v.api.aa1.cn/api/cdnfly-logtj/");
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        // 更新分析结果并显示
+                        analysisResult = xhr.responseText;
+                        var resultDiv = document.getElementById("result");
+                        resultDiv.innerHTML = analysisResult;
+
+                        // 隐藏加载动画
+                        hideLoading();
+                    }
+                };
+                xhr.send(formData);
+            }
+        });
+
+        function showLoading() {
+            var loading = document.getElementById("loading");
+            loading.style.display = "block";
+        }
+
+        function hideLoading() {
+            var loading = document.getElementById("loading");
+            loading.style.display = "none";
+            copy_success();
+
+        }
+    </script>
+    <!-- 弹窗 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.wpon.cn/2023/newtc/css/message.css">
+    <script src="https://cdn.wpon.cn/2023/newtc/js/message.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        function copy_success() {
+            $.message({
+                type: 'success',
+                content: "报告生成成功，请滑动往下看！"
+            });
+        }
+    </script>
+    <!-- 截图 -->
+    <script type="text/javascript" src="./assets/js/html2canvas.js"></script>
+    <script type="text/javascript" src="./assets/js/jsPdf.debug.js"></script>
+    <script type="text/javascript">
+        var downPdf = document.getElementById("renderPdf");
+
+        downPdf.onclick = function() {
+            html2canvas(document.body, {
+                onrendered: function(canvas) {
+
+                    //返回图片URL，参数：图片格式和清晰度(0-1)
+                    var pageData = canvas.toDataURL('image/jpeg', 1.0);
+
+                    //方向默认竖直，尺寸ponits，格式a4【595.28,841.89]
+                    var pdf = new jsPDF('', 'pt', 'a4');
+
+                    //需要dataUrl格式
+                    pdf.addImage(pageData, 'JPEG', 0, 0, 595.28, 592.28 / canvas.width * canvas.height);
+
+                    pdf.save('content.pdf');
+
+                }
+            })
+        }
+
+        var url = "https://v.api.aa1.cn/api/cdnfly-logtj/tjbg/index.php"
+        $.getJSON(url, function(data) {
+            $('#countnum').append(data.num);
+        });
+    </script>
+</body>
+
+</html>
